@@ -1,0 +1,39 @@
+//Variáveis para não precisar repetir tanto no código e também poder modificar com mais facilidade
+
+//Cores
+$cor-principal: blueviolet;
+$cor-secundaria: aqua;
+
+body {
+    margin: 0;
+}
+
+//Estilo do container feito em aninhamento, é possível estilizar tanto o lado direito quanto o esquerdo dentro da classe container, ma chamando a classe especifica
+.container {
+    height: 100vh;
+    display: flex;
+
+    .esquerdo{
+        width: 50%;
+        background-color: $cor-principal;
+        .texto{
+            color: $cor-secundaria;
+            margin-top: 40%;
+            text-align: center;
+            font-size: 80px;
+        }
+        
+    }
+
+    .direito{
+        width: 50%;
+        background-color: $cor-secundaria;
+        .texto{
+            color: $cor-principal;
+            margin-top: 40%;
+            text-align: center;
+            font-size: 80px;
+        }
+        
+    }
+}
